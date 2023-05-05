@@ -2,24 +2,6 @@
 Desafio de orquestração de dados utilizando Airflow.
 
 
-## :package:	Arquivos
-Este programa contém os seguintes arquivos:
-
-```
-README.md
-requirements.txt
-.gitignore
-install.sh
-data/
-├──── Northwind_small.sqlite
-├──── count.txt
-├──── final_output.txt
-├──── output_orders.csv
-airflow-data/
-dags/
-├──── dag_db.py
-```
-
 ## :books:	 Dicionário
 
 ### O que é Airflow?
