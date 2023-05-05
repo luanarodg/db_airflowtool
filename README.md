@@ -69,5 +69,23 @@ bash install.sh
 localhost:8080
 ```
 
+### Ajustes
+Num primeiro momento, o Airflow vem com algumas dags de exemplos dentro do ambiente que não são necessárias para esse desafio. Assim é possível alterar o código para que o ambiente considere apenas as dags criadas. Para isso
+
+- Vá até a página airflow-data no arquivo airflow.cfg e procure a variável load_examples que vai está True e substitua para False.
+```
+load_examples = True  >> load_examples = False
+```
+
+- Após salvar a alteração, vá ao terminal e digite.
+```
+airflow db reset
+```
+- Vai pedir uma confirmação do usuário e após terminar o carregamento, é só digitar novamente.
+```
+airflow standalone
+```
+
+Após isso, é só abrir o Airflow no navegador novamente que estará um ambiente mais limpo contendo apenas as dags necessárias.
 
 
