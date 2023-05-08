@@ -75,6 +75,9 @@ airflow db reset
 airflow standalone
 ```
 
+## :rocket:	 Resultado
 Após isso, é só abrir o Airflow no navegador novamente que estará um ambiente mais limpo contendo apenas as dags necessárias.
 
+Dessa forma o Airflow executará a DAG de forma que a lógica do programa aconteça e traga o resultado esperado, de utilizar o banco de dados para trazer as informações pedidas. Resultando no Graph abaixo que nos diz que tudo ocorreu de forma esperada. 
 
+<img src= "https://github.com/lurodig/db_airflowtool/blob/main/dag_image.png?raw=true">
