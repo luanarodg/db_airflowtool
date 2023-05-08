@@ -51,12 +51,19 @@ bash install.sh
 localhost:8080
 ```
 
+Após rodar o código irá surgir uma nova pasta no diretório chamada `airflow-data` contendo arquivos sobre a configuração do ambiente.
+
 ### Ajustes
 Num primeiro momento, o Airflow vem com algumas dags de exemplos dentro do ambiente que não são necessárias para esse desafio. Assim é possível alterar o código para que o ambiente considere apenas as dags criadas. Para isso
 
-- Vá até a página airflow-data no arquivo airflow.cfg e procure a variável load_examples que vai está True e substitua para False.
+- Vá até a página `airflow-data` no arquivo airflow.cfg e procure a variável `load_examples` que vai está True e substitua para False.
 ```
 load_examples = True  >> load_examples = False
+```
+
+- No mesmo arquivo airflow.cfg, certifique que o caminho da variável `dags_folder` é o mesmo de onde se encontra o arquivo do código da dag. Por exemplo:
+```
+dags_folder = /.../airflow_tooltorial/dags
 ```
 
 - Após salvar a alteração, vá ao terminal e digite.
