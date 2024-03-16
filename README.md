@@ -29,7 +29,7 @@ Para esse desafio é recomendado o ambiente Linux, e em caso de Windows, o uso d
 
 ### Airflow
 
-Esse programa foi orquestrado em Airflow, para ativá-lo é preciso primeiro criar um ambiente virtual para isolar a aplicação e ativar esse ambiente para assim seguir os passos de instalação.
+Este programa foi orquestrado com Airflow, para ativá-lo é preciso primeiro criar um ambiente virtual para isolar a aplicação e ativar esse ambiente para assim seguir os passos de instalação.
 
 ```
 virtualenv venv -p python3
